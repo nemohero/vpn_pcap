@@ -1,0 +1,66 @@
+{
+ "file": "sing-box.shadowsocks.native.2022-blake3-aes-128-gcm__site-02.pcap",
+ "packets": 61,
+ "c2s": 19,
+ "s2c": 42,
+ "other": 0,
+ "max_frame": 1514,
+ "over_ceiling": 0,
+ "truncated": false,
+ "syn": 1,
+ "synack": 1,
+ "fin": 1,
+ "rst": 1,
+ "protos": {
+  "tcp": 61
+ },
+ "len_hist": {
+  "0": 1,
+  "64": 23,
+  "128": 3,
+  "192": 2,
+  "256": 1,
+  "384": 1,
+  "576": 1,
+  "832": 1,
+  "1472": 28
+ },
+ "verdict": "pass",
+ "problems": [],
+ "elapsed_ms": 6705.8,
+ "phases": {
+  "capture_start": 0.95,
+  "core_start": 0.79,
+  "wait_socks": 0.93,
+  "payload": 1.4,
+  "stop_core": 0.64,
+  "stop_capture": 1.99,
+  "inspect": 0.0
+ },
+ "payload": {
+  "bytes_in": 36210,
+  "connect_ms": 6.2,
+  "elapsed_ms": 618.1,
+  "http_status": "HTTP/1.1 200 OK",
+  "kind": "tcp",
+  "ok": true,
+  "sni": "site-02",
+  "target": "site-02:443",
+  "tls": true
+ },
+ "shape": {
+  "core": "sing-box",
+  "core_binary": "sing-box-1.14.3",
+  "protocol": "shadowsocks",
+  "carrier": "native",
+  "mode": "2022-blake3-aes-128-gcm",
+  "outer": "tcp",
+  "expect": "tcp",
+  "tls": true,
+  "reality": false,
+  "client_ip": "10.140.0.3",
+  "server_ip": "10.140.0.2",
+  "server_port": 443,
+  "branch": "real"
+ }
+}

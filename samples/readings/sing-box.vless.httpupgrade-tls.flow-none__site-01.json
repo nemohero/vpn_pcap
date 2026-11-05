@@ -1,0 +1,69 @@
+{
+ "file": "sing-box.vless.httpupgrade-tls.flow-none__site-01.pcap",
+ "packets": 146,
+ "c2s": 51,
+ "s2c": 95,
+ "other": 0,
+ "max_frame": 1514,
+ "over_ceiling": 0,
+ "truncated": false,
+ "syn": 1,
+ "synack": 1,
+ "fin": 2,
+ "rst": 0,
+ "protos": {
+  "tcp": 146
+ },
+ "len_hist": {
+  "64": 57,
+  "128": 2,
+  "192": 3,
+  "384": 2,
+  "512": 1,
+  "576": 1,
+  "640": 1,
+  "832": 1,
+  "1024": 1,
+  "1216": 13,
+  "1344": 37,
+  "1472": 27
+ },
+ "verdict": "pass",
+ "problems": [],
+ "elapsed_ms": 5631.3,
+ "phases": {
+  "capture_start": 0.71,
+  "core_start": 0.37,
+  "wait_socks": 0.4,
+  "payload": 2.35,
+  "stop_core": 0.33,
+  "stop_capture": 1.47,
+  "inspect": 0.0
+ },
+ "payload": {
+  "bytes_in": 96981,
+  "connect_ms": 21.8,
+  "elapsed_ms": 1918.5,
+  "http_status": "HTTP/1.1 200 OK",
+  "kind": "tcp",
+  "ok": true,
+  "sni": "site-01",
+  "target": "site-01:443",
+  "tls": true
+ },
+ "shape": {
+  "core": "sing-box",
+  "core_binary": "sing-box-1.14.3",
+  "protocol": "vless",
+  "carrier": "httpupgrade-tls",
+  "mode": "flow-none",
+  "outer": "tcp",
+  "expect": "tcp",
+  "tls": true,
+  "reality": false,
+  "client_ip": "10.140.0.3",
+  "server_ip": "10.140.0.2",
+  "server_port": 443,
+  "branch": "real"
+ }
+}

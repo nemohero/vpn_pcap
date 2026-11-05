@@ -1,0 +1,73 @@
+{
+ "file": "sing-box.trojan.ws-tls.base__site-07.pcap",
+ "packets": 440,
+ "c2s": 213,
+ "s2c": 227,
+ "other": 0,
+ "max_frame": 1514,
+ "over_ceiling": 0,
+ "truncated": false,
+ "syn": 1,
+ "synack": 1,
+ "fin": 1,
+ "rst": 1,
+ "protos": {
+  "tcp": 440
+ },
+ "len_hist": {
+  "0": 1,
+  "64": 219,
+  "128": 3,
+  "192": 1,
+  "256": 1,
+  "320": 1,
+  "384": 5,
+  "576": 1,
+  "768": 3,
+  "832": 1,
+  "896": 6,
+  "1088": 13,
+  "1216": 23,
+  "1344": 75,
+  "1408": 1,
+  "1472": 86
+ },
+ "verdict": "pass",
+ "problems": [],
+ "elapsed_ms": 23653.3,
+ "phases": {
+  "capture_start": 0.7,
+  "core_start": 0.3,
+  "wait_socks": 0.34,
+  "payload": 20.58,
+  "stop_core": 0.29,
+  "stop_capture": 1.43,
+  "inspect": 0.01
+ },
+ "payload": {
+  "bytes_in": 262636,
+  "connect_ms": 8.7,
+  "elapsed_ms": 20187.8,
+  "http_status": "HTTP/1.1 200 OK",
+  "kind": "tcp",
+  "ok": true,
+  "sni": "site-07",
+  "target": "site-07:443",
+  "tls": true
+ },
+ "shape": {
+  "core": "sing-box",
+  "core_binary": "sing-box-1.14.3",
+  "protocol": "trojan",
+  "carrier": "ws-tls",
+  "mode": "base",
+  "outer": "tcp",
+  "expect": "tcp",
+  "tls": true,
+  "reality": false,
+  "client_ip": "10.140.0.3",
+  "server_ip": "10.140.0.2",
+  "server_port": 443,
+  "branch": "real"
+ }
+}

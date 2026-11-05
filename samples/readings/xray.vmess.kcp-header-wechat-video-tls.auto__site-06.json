@@ -1,0 +1,68 @@
+{
+ "file": "xray.vmess.kcp-header-wechat-video-tls.auto__site-06.pcap",
+ "packets": 397,
+ "c2s": 184,
+ "s2c": 208,
+ "other": 5,
+ "max_frame": 1392,
+ "over_ceiling": 0,
+ "truncated": false,
+ "syn": 0,
+ "synack": 0,
+ "fin": 0,
+ "rst": 0,
+ "protos": {
+  "udp": 392
+ },
+ "len_hist": {
+  "0": 20,
+  "64": 237,
+  "128": 10,
+  "192": 3,
+  "256": 3,
+  "448": 1,
+  "768": 3,
+  "1088": 2,
+  "1216": 3,
+  "1280": 3,
+  "1344": 112
+ },
+ "verdict": "pass",
+ "problems": [],
+ "elapsed_ms": 14247.1,
+ "phases": {
+  "capture_start": 0.95,
+  "core_start": 0.52,
+  "wait_socks": 0.62,
+  "payload": 9.59,
+  "stop_core": 0.35,
+  "stop_capture": 2.21,
+  "inspect": 0.01
+ },
+ "payload": {
+  "bytes_in": 147717,
+  "connect_ms": 5.1,
+  "elapsed_ms": 9018.7,
+  "http_status": "HTTP/1.1 200 OK",
+  "kind": "tcp",
+  "ok": true,
+  "sni": "site-06",
+  "target": "site-06:443",
+  "tls": true
+ },
+ "shape": {
+  "core": "xray",
+  "core_binary": "xray-26.10.17",
+  "protocol": "vmess",
+  "carrier": "kcp-header-wechat-video-tls",
+  "mode": "auto",
+  "outer": "udp",
+  "expect": "udp",
+  "tls": true,
+  "reality": false,
+  "client_ip": "10.140.0.3",
+  "server_ip": "10.140.0.2",
+  "server_port": 443,
+  "branch": "real"
+ }
+}
